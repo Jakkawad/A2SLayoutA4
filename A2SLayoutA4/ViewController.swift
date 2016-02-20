@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import PageMenu
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CAPSPageMenuDelegate {
 
+    var pageMenu:CAPSPageMenu?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.title = "Titie"
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func willMoveToPage(controller:UIViewController, index:Int) {
+        
+    }
+    
+    func didMoveToPage(controller:UIViewController, index:Int) {
+        
+    }
 
 }
 
